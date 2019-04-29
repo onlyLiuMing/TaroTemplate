@@ -1,0 +1,57 @@
+// 右边小红点
+.has-decoration-right {
+  position: relative;
+  &::after {
+    content: '';
+    width: 1em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 1em;
+    line-height: 1em;
+    // background-image: url('../image/accredit-3x.png');
+  }
+}
+
+/*
+* 允许点击
+*/ 
+.j-enable-click {
+  cursor: pointer;
+  &:active {
+    transform: translate(1px, 1px);
+  }
+}
+
+/*
+* 阴影
+* shaodow-box
+*/
+@mixin shadow($x, $y, $blur, $color) {
+  box-shadow: $x $y $blur 1px $color;
+}
+@mixin shadow-xy {
+  @include shadow(1px, 1px, 10px, $gray-4);
+}
+
+@mixin shadow-y {
+  @include shadow(0px, 2px, 8px, $gray-4);
+}
+
+.j-shadow-box-y {
+  @include shadow-y;
+}
+.j-shadow-box-xy {
+  @include shadow-xy;
+}
+
+/*
+* 隐藏
+* hide
+*/ 
+.j-hide {
+  display: none !important;
+}
+.j-text-hide {
+  visibility: hidden !important;
+}

@@ -1,0 +1,7 @@
+@import './color';
+.at-button {
+  &,&.at-button-default{
+    background-color: $default-color;
+    box-shadow: 1rpx 1rpx 4rpx 0 $default-color;
+  }
+}

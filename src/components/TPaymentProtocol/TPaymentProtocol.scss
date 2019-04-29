@@ -1,0 +1,22 @@
+@import "../../assets/scss/variables";
+.#{$prefix} {
+  &-TPaymentProtocol-wrap {
+    width: 100%;
+    line-height: 1.5em;
+    .protocol-item {
+      & + .protocol-item {
+        margin-top: 1em;
+      }
+      .protocol-title {
+        font-size: 12pt;
+      }
+      .section {
+        &+.section{
+          margin-top:1em;
+        }
+        font-size: 9pt;
+        color: $f-gray;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import "./assets/scss/variables.scss";
+$color-brand: $default-color;// 设置taro的默认颜色
+@import "~taro-ui/dist/style/index.scss";
+
+/**
+* 删除.share-button的所有样式（仅当作外壳） 
+*/
+.share-button {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  box-sizing: border-box;
+  text-align: unset;
+  text-decoration: none;
+  line-height: unset;
+  border-radius: unset;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  background-color: #ffffff;
+  .button-hover {
+    color: unset;
+    background-color: #ffffff;
+  }
+  &::after {
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+  }
+}
+
+/**
+* 点击效果，用于 hover-class='' 事件上
+*/
+.hover-class,
+.bg-hover-class {
+  background-color: $page-color-2;
+}
+

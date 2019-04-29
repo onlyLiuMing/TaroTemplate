@@ -1,0 +1,34 @@
+@import "../../asset/style/color.scss";
+@import "./iconfont/style.scss";
+
+$COLOR: #F6F7FA;
+.nav_bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0 ;
+  left: 0;
+  right: 0;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+  background-color: $COLOR;
+  .nav_bar_tag_item{
+    flex: 1 1 auto;
+    font-size: 10pt;
+    color: $gray-2;
+    text-align: center;
+    .nav_Bar_tar_item_icon,.nav_Bar_tar_item_title{
+      display: block;
+    }
+    .nav_Bar_tar_item_icon{
+      font-size: 18pt;
+    }
+    &.nav_bar_tag_item_active{
+      color: $default-color;
+    }
+  }
+}

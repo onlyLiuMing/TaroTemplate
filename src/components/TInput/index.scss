@@ -1,0 +1,38 @@
+@import "../../assets/scss/variables";
+.#{$prefix} {
+  &-TInput-wrap {
+    // width: 100%;
+    display: flex;
+    padding-right: 18rpx;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    .left-child-box,.right-child-box{
+      flex: 0 0 auto;
+      vertical-align: middle;
+    }
+    .left-icon-box,.right-icon-box{
+      flex: 0 0 auto;
+      width: 1em;
+      height: 1em;
+      vertical-align: middle;
+      image{
+        width: 100%;
+        height: 100%;
+        transform:translateY(-2px);
+      }
+    }
+    .left-icon-box,.left-child-box{
+      margin-left: 24rpx;
+      &+.left-icon-box,.left-child-box{
+        margin-left: 1em;
+      }
+    }
+    .input-box{
+      flex: 1 1 auto;
+      .at-input{
+        margin-left:0;
+      }
+    }
+  }
+}

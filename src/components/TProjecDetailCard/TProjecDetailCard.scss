@@ -1,0 +1,88 @@
+@import "../../assets/scss/variables";
+.#{$prefix} {
+  &-TProjecDetailCard-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+    background-color: white;
+    .project-poster-wrap {
+      flex: 0 0 auto;
+      display: inline-block;
+      height: 165rpx;
+      width: 115rpx;
+      vertical-align: middle;
+      box-shadow: 0 1px 4px 1px $gray;
+      .project-poster {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .project-info-wrap {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: flex-start;
+      margin-left: 1em;
+      margin-right: 1em;
+      .project-info-box {
+        flex: 0 0 auto;
+        flex-direction: row;
+        justify-content: row;
+        align-content: center;
+        margin-top:0.2em;
+        margin-bottom:0.2em;
+        color: $f-gray;
+        .project-name {
+          font-size:12pt;
+        }
+        .project-type,.project-join-status  {
+          margin-left: 0.2em;
+          margin-right: 0.2em;
+          padding-top: 1rpx;
+          padding-top: 1rpx;
+          padding-left: 2rpx;
+          padding-right: 2rpx;
+          font-size: 9pt;
+          border-radius: 0.2em;
+        }
+        .project-type{
+          display:inline-block;
+          color: $orange;
+          border: 1rpx solid $orange;
+        }
+        .project-join-status {
+          color: white;
+          background-color: $default-color;
+          border: 1rpx solid $default-color;
+        }
+      }
+      .income-info-box{
+        font-size: 9pt;
+        text-align: right;
+        .income-count{}
+      }
+      .project-info-extra-box {
+        flex: 0 0 auto;
+        font-size: 9pt;
+        color: $f-gray;
+        .join-info {
+          .user-job{
+
+          }
+        }
+        .income-info-box{
+          text-align: right;
+          .income-count-amount{
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+// @import './color';
+
+// 字号 9 11 13 15 18 20 40
+.f-1 {
+  font-size: 9pt!important; 
+}
+.f-2 {
+  font-size: 10pt!important;
+}
+.f-3 {
+  font-size: 11pt!important;
+}
+.f-4 {
+  font-size: 12pt!important;
+}
+.f-5 {
+  font-size: 13pt!important;
+}
+.f-6 {
+  font-size: 14pt!important;
+}
+.f-7 {
+  font-size: 20pt!important;
+}
+.f-8 {
+  font-size: 40pt!important;
+}
+
+/* 
+* 字体颜色
+*/
+.fc-white {
+  color: $white;
+}
+.fc-black {
+  color: $black;
+}
+.fc-gray {
+  color: $gray;
+}
+.fc-violet {
+  color: $violet;
+}
+.fc-red {
+  color: $red;
+}
+.fc-blue {
+  color: $blue;
+}
+.fc-green {
+  color: $green;
+}
+.fc-yellow {
+  color: $yellow;
+}
+.fc-orange {
+  color: $orange;
+}
+
+/*
+* 文字对齐方式
+* j-has-text-centered 
+  j-has-text-left 
+  j-has-text-right
+*/
+.j-has-text-centered{
+  text-align: center;
+}
+.j-has-text-left{
+  text-align: left;
+}
+.j-has-text-right{
+  text-align: right;
+}
+
+/*
+* 文字-字体
+* j-has-text-weight-normal 
+  j-has-text-weight-bold   
+  j-has-text-weight-#{ 100... 700 }
+*/ 
+.j-has-text-weight-bold{
+  font-weight: bold;
+}
+.j-has-text-weight-normal{
+  font-weight: normal;
+}
+@for $weight from 1 to 7 {
+  .j-has-text-weight-#{ $weight * 100 }{
+    font-weight: $weight * 100;
+  }
+}
+
+/*
+* 折行隐藏
+*/
+.j-has-text-overhide{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
